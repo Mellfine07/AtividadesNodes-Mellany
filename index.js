@@ -1,3 +1,6 @@
+const prompt = require('prompt-sync');
+const entrada = prompt();
+
 const nomeCompleto = "Mellany Finelli";
 const anoNascimento = 2007;
 let anoAtual = 2024;
@@ -30,12 +33,13 @@ console.log(listaDeViagens);
 listaDeViagens.splice(3,1);
 console.log(listaDeViagens);
 
-const idadeComprador = 27;
+var nomeComprador = entrada("Qual é o seu nome?");
+var idadeComprador = entrada("Qual é a sua idade?");
 
 if(idadeComprador < 18){
-  console.log("Infelizmente, devido as diretrizes do nosso site em questão a crianças e adolescentes menores de 18 anos, não podemos vender nossas passagens, obrigada pela compreensão.")
+  console.log("Sentimos muito " + nomeComprador + ", devido as diretrizes do nosso site em questão a crianças e adolescentes menores de 18 anos, não podemos vender nossas passagens, obrigada pela compreensão.")
 };
 
 if (idadeComprador >= 18){
-  console.log("Obrigada por confiar em nossa empresa! Compra realizada com sucesso ;D")
+  console.log("Obrigada por confiar em nossa empresa, Senhor(a) " + nomeComprador + ", Compra realizada com sucesso ")
 };
