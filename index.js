@@ -37,9 +37,11 @@ var nomeComprador = entrada("Qual é o seu nome?");
 var idadeComprador = entrada("Qual é a sua idade?");
 
 if(idadeComprador < 18){
-  console.log("Sentimos muito " + nomeComprador + ", devido as diretrizes do nosso site em questão a crianças e adolescentes menores de 18 anos, não podemos vender nossas passagens, obrigada pela compreensão.")
+  console.log(`Olá ${nomeComprador}, devido sua idade ser ${idadeComprador} anos, não podemos vender nossas passagens sem a companhia e autorização dos seus pais ou responsáveis, obrigada pela compreensão!`);
 };
 
 if (idadeComprador >= 18){
-  console.log("Obrigada por confiar em nossa empresa, Senhor(a) " + nomeComprador + ", Compra realizada com sucesso ")
+  console.log(`Obrigada por confiar em nossa empresa ${nomeComprador}, por ter ${idadeComprador} anos, seu cadastro segue corretamente nossas diretrizes! 
+  Qual seria o destino da viagem?`)
+  console.log(listaDeViagens);
 };
