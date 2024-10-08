@@ -20,26 +20,27 @@ const loginCerto = "LynFine";
 const senhaCerta = 0708;
 
 console.log("");
-console.log("======================");
-console.log("--AGÊNCIA DE VIAGENS--");
-console.log("======================");
+console.log("    ========================");
+console.log("    ✉✉ AGÊNCIA DE VIAGENS ✉✉");
+console.log("    ========================");
 console.log("");
 
-console.log("Faça seu login!");
-
-var login = entrada("Login: ");
-var senha = entrada("Senha: ");
+console.log(" __↓ Faça seu login abaixo ↓__");
+console.log("");
+var login = entrada("➤ Nome: ");
+var senha = entrada("➤ Senha: ");
+console.log("");
 
 while(login != loginCerto){
   console.log("Login incorreto!");
-  login = entrada ("Digite seu login novamente: ");
+  login = entrada ("➤ Digite seu login novamente: ");
+   console.log("");
 }
-
 while(senha != senhaCerta){
   console.log("Senha incorreta!");
-  senha = entrada ("Digite sua senha novamente: ");
+  senha = entrada ("➤ Digite sua senha novamente: ");
+   console.log("");
 }
-
 const listaDeViagens = new Array(
   `Paris`,
   `Japão`,
@@ -47,25 +48,26 @@ const listaDeViagens = new Array(
   `Portugual`,
   `itália`
 );
-
 console.log(listaDeViagens);
 
-console.log(listaDeViagens[3]);
 listaDeViagens.push("Coronel Vivida");
 console.log(listaDeViagens);
-
 listaDeViagens.splice(3,1);
-console.log(listaDeViagens);
 
-var nomeComprador = entrada("Qual é o seu nome? ");
-var idadeComprador = entrada("Qual é a sua idade? ");
+console.log(listaDeViagens);
+  console.log(listaDeViagens[3])
+
+ console.log("");
+var nomeComprador = entrada("➤ Qual é o seu nome? ");
+var idadeComprador = entrada("➤ Qual é a sua idade? ");
+console.log("");
 
 if(idadeComprador < 18){
   console.log(`Olá ${nomeComprador}, devido sua idade ser ${idadeComprador} anos, não podemos vender nossas passagens sem a companhia e autorização dos seus pais ou responsáveis, obrigada pela compreensão!`);
 };
 
 if (idadeComprador >= 18){
-  console.log(`Obrigada por confiar em nossa empresa ${nomeComprador}, por ter ${idadeComprador} anos, seu cadastro segue corretamente nossas diretrizes! 
+  console.log(`Obrigada por confiar em nossa empresa ${nomeComprador}, por ter ${idadeComprador} anos, seu cadastro segue corretamente nossas diretrizes! ✉✉
   Qual seria o destino da viagem?`)
   console.log(listaDeViagens);
 };
